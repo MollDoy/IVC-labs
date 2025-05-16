@@ -12,7 +12,7 @@ father(william, charles).
 father(charles, alice).
 father(charles, henry).
 
-% Сыновья и дочери
+% Факты о гендерах людей
 male(john).
 male(mike).
 male(david).
