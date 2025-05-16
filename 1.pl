@@ -12,8 +12,22 @@ father(william, charles).
 father(charles, alice).
 father(charles, henry).
 
+% Сыновья и дочери
+male(john).
+male(mike).
+male(david).
+male(michael).
+male(robert).
+male(william).
+male(charles).
+male(henry).
+
+female(sophia).
+female(emily).
+female(alice).
+
 % Правило для определения братьев в семье
-brother(X, Y) :- father(F, X), father(F, Y), X \= Y.
+brother(X, Y) :- father(F, X), father(F, Y), male(X), X \= Y.
 
 % Правило для определения отношения ДЯДЯ
 uncle(Uncle, Person) :- father(Father, Person), brother(Uncle, Father).
