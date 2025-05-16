@@ -1,13 +1,19 @@
 % Вариант 23. Есть факты об отцах некотоpых людей и о бpатьях некотоpых людей. Опpеделить отношение ДЯДЯ.
 
-% Факты об отцах и братьях
+% Факты об отцах
 father(john, mike).
 father(john, david).
 father(michael, sophia).
 father(david, emily).
+father(robert, john).
+father(robert, michael).
+father(robert, william).
+father(william, charles).
+father(charles, alice).
+father(charles, henry).
 
-brother(mike, david).
-brother(david, mike).
+% Правило для определения братьев в семье
+brother(X, Y) :- father(F, X), father(F, Y), X \= Y.
 
 % Правило для определения отношения ДЯДЯ
 uncle(Uncle, Person) :- father(Father, Person), brother(Uncle, Father).
