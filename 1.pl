@@ -1,14 +1,14 @@
 % Вариант 23. Есть факты об отцах некотоpых людей и о бpатьях некотоpых людей. Опpеделить отношение ДЯДЯ.
 
 % Факты об отцах
-father(john, mike).
-father(john, david).
-father(michael, sophia).
-father(david, emily).
 father(robert, john).
 father(robert, michael).
 father(robert, william).
+father(john, mike).
+father(john, david).
+father(michael, sophia).
 father(william, charles).
+father(david, emily).
 father(charles, alice).
 father(charles, henry).
 
