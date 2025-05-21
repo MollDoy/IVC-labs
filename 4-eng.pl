@@ -35,18 +35,18 @@ ask_preference :-
 % База данных напитков: drink(Название, Список_времени, Список_настроений, Список_предпочтений)
 drink('herbal_tea', ['night'], ['stressed'], ['sugar_free']).
 drink('mint_tea', ['evening', 'night'], ['stressed'], ['hot', 'sugar_free']).
-drink('iced_tea', ['day'], ['energetic'], ['cold']).
-drink('tea', ['evening', 'night'], ['relaxed', 'stressed'], ['hot', 'sugar_free']).
 drink('hot_chocolate', ['evening'], ['stressed'], ['hot']).
-drink('matcha', ['morning'], ['energetic'], ['hot']).
-drink('coffee', ['morning', 'day'], ['tired', 'energetic'], ['hot']).
-drink('energy_drink', ['day'], ['tired'], ['sweet']).
-drink('juice', ['morning', 'day', 'night'], ['energetic', 'relaxed'], ['cold', 'sweet']).
+drink('kvass', ['day'], ['energetic'], ['cold', 'sweet']).
 drink('kompot', ['day'], ['energetic'], ['sweet']).
 drink('milkshake', ['day'], ['relaxed'], ['sweet']).
-drink('lemonade', ['evening', 'night'], ['relaxed'], ['cold']).
+drink('iced_tea', ['day'], ['energetic'], ['cold']).
 drink('sparkling_water', ['day', 'evening'], ['energetic', 'relaxed'], ['sugar_free', 'cold']).
-drink('kvass', ['day'], ['energetic'], ['cold', 'sweet']).
+drink('matcha', ['morning'], ['energetic'], ['hot']).
+drink('energy_drink', ['day'], ['tired'], ['sweet']).
+drink('lemonade', ['evening', 'night'], ['relaxed'], ['cold']).
+drink('tea', ['evening', 'night'], ['relaxed', 'stressed'], ['hot', 'sugar_free']).
+drink('coffee', ['morning', 'day'], ['tired', 'energetic'], ['hot']).
+drink('juice', ['morning', 'day', 'night'], ['energetic', 'relaxed'], ['cold', 'sweet']).
 
 % Рекомендация напитка
 recommend(Drink) :-
