@@ -47,7 +47,7 @@ drink('lemonade', ['evening', 'night'], ['relaxed'], ['cold']).            % Ч�
 drink('tea', ['evening', 'night'], ['relaxed', 'stressed'], ['hot', 'sugar_free']). % Много перекрытий — ниже всех похожих
 drink('coffee', ['morning', 'day'], ['tired', 'energetic'], ['hot']).      % Универсален
 drink('juice', ['morning', 'day', 'night'], ['energetic', 'relaxed'], ['cold', 'sweet']). % Универсален — внизу
-drink('water', ['morning', 'day', 'evening', 'night'], ['tired', 'energetic', 'stressed', 'relaxed'], ['sugar_free']). % Запасной случай — самый конец
+drink('plain_tea', ['morning', 'day', 'evening', 'night'], ['tired', 'energetic', 'stressed', 'relaxed'], ['sugar_free']). % Запасной случай — самый конец
 
 % Рекомендация напитка
 recommend(Drink) :-
