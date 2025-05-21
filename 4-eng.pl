@@ -35,6 +35,7 @@ ask_preference :-
 % База данных напитков: drink(Название, Список_времени, Список_настроений, Список_предпочтений)
 drink('mint_tea', ['evening', 'night'], ['stressed'], ['hot', 'sugar_free']).
 drink('herbal_tea', ['night'], ['stressed'], ['sugar_free']).
+drink('iced_tea', ['day'], ['energetic'], ['cold']).
 drink('tea', ['evening', 'night'], ['relaxed', 'stressed'], ['hot', 'sugar_free']).
 drink('hot_chocolate', ['evening'], ['stressed'], ['hot']).
 drink('matcha', ['morning'], ['energetic'], ['hot']).
@@ -44,7 +45,6 @@ drink('juice', ['morning', 'day', 'night'], ['energetic', 'relaxed'], ['cold', '
 drink('kompot', ['day'], ['energetic'], ['sweet']).
 drink('milkshake', ['day'], ['relaxed'], ['sweet']).
 drink('lemonade', ['evening', 'night'], ['relaxed'], ['cold']).
-drink('iced_tea', ['day'], ['energetic'], ['cold']).
 drink('sparkling_water', ['day', 'evening'], ['energetic', 'relaxed'], ['sugar_free', 'cold']).
 drink('kvass', ['day'], ['energetic'], ['cold', 'sweet']).
 
