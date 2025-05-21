@@ -33,8 +33,8 @@ ask_preference :-
     assertz(preference(Preference)).
 
 % База данных напитков: drink(Название, Список_времени, Список_настроений, Список_предпочтений)
-drink('mint_tea', ['evening', 'night'], ['stressed'], ['hot', 'sugar_free']).
 drink('herbal_tea', ['night'], ['stressed'], ['sugar_free']).
+drink('mint_tea', ['evening', 'night'], ['stressed'], ['hot', 'sugar_free']).
 drink('iced_tea', ['day'], ['energetic'], ['cold']).
 drink('tea', ['evening', 'night'], ['relaxed', 'stressed'], ['hot', 'sugar_free']).
 drink('hot_chocolate', ['evening'], ['stressed'], ['hot']).
