@@ -33,19 +33,18 @@ ask_preference :-
     assertz(preference(Preference)).
 
 % База данных напитков: drink(Название, Список_времени, Список_настроений, Список_предпочтений)
-drink('coffee', ['morning', 'day'], ['tired', 'energetic'], ['hot']).
-drink('matcha', ['morning'], ['energetic'], ['hot']).
-drink('tea', ['evening', 'night'], ['relaxed', 'stressed'], ['hot', 'sugar_free']).
+drink('mint_tea', ['evening', 'night'], ['stressed'], ['hot', 'sugar_free']).
 drink('herbal_tea', ['night'], ['stressed'], ['sugar_free']).
+drink('tea', ['evening', 'night'], ['relaxed', 'stressed'], ['hot', 'sugar_free']).
 drink('hot_chocolate', ['evening'], ['stressed'], ['hot']).
+drink('matcha', ['morning'], ['energetic'], ['hot']).
+drink('coffee', ['morning', 'day'], ['tired', 'energetic'], ['hot']).
 drink('energy_drink', ['day'], ['tired'], ['sweet']).
 drink('juice', ['morning', 'day', 'night'], ['energetic', 'relaxed'], ['cold', 'sweet']).
 drink('kompot', ['day'], ['energetic'], ['sweet']).
 drink('milkshake', ['day'], ['relaxed'], ['sweet']).
 drink('lemonade', ['evening', 'night'], ['relaxed'], ['cold']).
-drink('water', ['morning', 'day', 'evening', 'night'], ['tired', 'energetic', 'stressed', 'relaxed'], ['sugar_free']).
 drink('iced_tea', ['day'], ['energetic'], ['cold']).
-drink('mint_tea', ['evening', 'night'], ['stressed'], ['hot', 'sugar_free']).
 drink('sparkling_water', ['day', 'evening'], ['energetic', 'relaxed'], ['sugar_free', 'cold']).
 drink('kvass', ['day'], ['energetic'], ['cold', 'sweet']).
 
